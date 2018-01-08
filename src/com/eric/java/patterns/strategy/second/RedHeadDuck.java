@@ -1,6 +1,6 @@
 package com.eric.java.patterns.strategy.second;
 
-import com.eric.java.patterns.strategy.second.impl.BadFlyBehavior;
+import com.eric.java.patterns.strategy.second.impl.BadIFlyBehavior;
 import com.eric.java.patterns.strategy.second.impl.GaGaQuackBehaviorImpl;
 
 /**
@@ -17,8 +17,8 @@ public class RedHeadDuck extends Duck {
     }
 
     public RedHeadDuck() {
-        flyBehavior = new BadFlyBehavior();
-        quackBehavior = new GaGaQuackBehaviorImpl();
+        flyBehavior = new BadIFlyBehavior();
+        IQuackBehavior = new GaGaQuackBehaviorImpl();
     }
 
 

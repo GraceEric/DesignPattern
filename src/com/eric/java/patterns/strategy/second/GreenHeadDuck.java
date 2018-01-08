@@ -2,7 +2,7 @@ package com.eric.java.patterns.strategy.second;
 
 
 import com.eric.java.patterns.strategy.second.impl.GaGaQuackBehaviorImpl;
-import com.eric.java.patterns.strategy.second.impl.GoodFlyBehavior;
+import com.eric.java.patterns.strategy.second.impl.GoodIFlyBehavior;
 
 /**
  * GreenHeadDuck: 绿头鸭子
@@ -18,7 +18,7 @@ public class GreenHeadDuck extends Duck {
     }
 
     public GreenHeadDuck() {
-        flyBehavior = new GoodFlyBehavior();
-        quackBehavior = new GaGaQuackBehaviorImpl();
+        flyBehavior = new GoodIFlyBehavior();
+        IQuackBehavior = new GaGaQuackBehaviorImpl();
     }
 }

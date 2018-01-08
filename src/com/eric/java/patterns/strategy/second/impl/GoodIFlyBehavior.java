@@ -1,14 +1,14 @@
 package com.eric.java.patterns.strategy.second.impl;
 
-import com.eric.java.patterns.strategy.second.FlyBehavior;
+import com.eric.java.patterns.strategy.second.IFlyBehavior;
 
 /**
- * GoodFlyBehavior: 飞的好
+ * GoodIFlyBehavior: 飞的好
  *
  * @author: MrServer
  * @since: 2018/1/5 下午1:15
  */
-public class GoodFlyBehavior implements FlyBehavior {
+public class GoodIFlyBehavior implements IFlyBehavior {
     @Override
     public void fly() {
         System.out.println("飞的好。。。。。");

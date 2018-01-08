@@ -8,8 +8,8 @@ package com.eric.java.patterns.strategy.second;
  */
 public abstract class Duck {
 
-    FlyBehavior flyBehavior;
-    QuackBehavior quackBehavior;
+    IFlyBehavior flyBehavior;
+    IQuackBehavior IQuackBehavior;
 
     public Duck() {
     }
@@ -19,7 +19,7 @@ public abstract class Duck {
     }
 
     public void quack(){
-        quackBehavior.quack();
+        IQuackBehavior.quack();
     }
 
     /**
