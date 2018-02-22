@@ -26,6 +26,7 @@ public class InternetWeather {
         weatherData.registObserver(currentConditions);
         weatherData.registObserver(forcastConditions);
 
+
         weatherData.setData(30,150,40);
 
         weatherData.removeObServer(currentConditions);
